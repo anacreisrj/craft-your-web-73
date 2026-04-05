@@ -12,8 +12,21 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+        display: ['"Playfair Display"', 'serif'],
+        body: ['Inter', 'sans-serif'],
+      },
     extend: {
       colors: {
+        nav: {
+          DEFAULT: "hsl(var(--nav))",
+          foreground: "hsl(var(--nav-foreground))",
+        },
+        "contact-bar": "hsl(var(--contact-bar))",
+        footer: {
+          DEFAULT: "hsl(var(--footer))",
+          foreground: "hsl(var(--footer-foreground))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
