@@ -1,4 +1,5 @@
 import { Mail, Globe, MapPin } from "lucide-react";
+import logo from "@/assets/logo-pa.png";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xs">P&A</span>
-              </div>
+              <img src={logo} alt="P&A Logo" className="w-10 h-10 rounded-full object-cover" width={40} height={40} />
               <span className="font-display text-lg font-semibold text-primary">Pedro & Ana</span>
             </div>
             <p className="text-footer-foreground/70 text-sm leading-relaxed font-body">
@@ -38,7 +37,7 @@ const Footer = () => {
           <div>
             <h3 className="font-display text-lg font-semibold mb-4 text-secondary-foreground">Quick Links</h3>
             <div className="space-y-3">
-              <a href="#instructors" className="block text-footer-foreground/70 hover:text-primary transition-colors text-sm font-body">Meet Your Instructors</a>
+              <a href="#instructors" className="block text-footer-foreground/70 hover:text-primary transition-colors text-sm font-body">About Us</a>
               <a href="#mentorship" className="block text-footer-foreground/70 hover:text-primary transition-colors text-sm font-body">Mentorship Program</a>
               <a href="#zoukmov" className="block text-footer-foreground/70 hover:text-primary transition-colors text-sm font-body">Zouk Mov Community</a>
             </div>

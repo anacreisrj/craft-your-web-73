@@ -1,51 +1,32 @@
-import pedroPic from "@/assets/instructor-pedro.jpg";
-import anaPic from "@/assets/instructor-ana.jpg";
+import logo from "@/assets/logo-pa.png";
 
 const InstructorsSection = () => {
   return (
     <section id="instructors" className="bg-secondary py-20">
       <div className="container mx-auto px-4">
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary-foreground text-center mb-4">
-          Meet Your Instructors
-        </h2>
-        <p className="text-secondary-foreground/70 text-center font-body max-w-2xl mx-auto mb-16">
-          World champions with over 10 years of experience dedicated to sharing the beauty of Brazilian Zouk and Lambada.
-        </p>
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <img src={logo} alt="P&A Logo" className="w-12 h-12 rounded-full object-cover" width={48} height={48} />
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary-foreground">
+            About Us
+          </h2>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {/* Pedro */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src={pedroPic}
-              alt="Pedro - Brazilian Zouk Instructor"
-              className="w-64 h-64 rounded-full object-cover mb-6 border-4 border-primary/30"
-              loading="lazy"
-              width={640}
-              height={800}
-            />
-            <h3 className="font-display text-2xl font-semibold text-secondary-foreground mb-2">Pedro</h3>
-            <p className="text-primary font-body text-sm font-semibold mb-3">Lead Instructor & Choreographer</p>
-            <p className="text-secondary-foreground/70 font-body text-sm leading-relaxed max-w-xs">
-              With a deep understanding of body mechanics and musicality, Pedro brings energy and precision to every class. His innovative teaching style makes complex moves accessible to all levels.
-            </p>
-          </div>
+        <div className="max-w-3xl mx-auto space-y-6 text-secondary-foreground/80 font-body leading-relaxed">
+          <p>
+            Pedro Castro and Ana Reis are renowned Brazilian Zouk World Champions, All-Stars in Jack and Jill competitions, and certified judges with the Brazilian Zouk Dance Council (BZDC).
+          </p>
+          <p>
+            Originally from Rio de Janeiro, Brazil, Pedro and Ana have over 20 years of combined dance training, with a background in Contemporary Dance, Jazz, and Classical Ballet. This diverse training has deeply influenced their mastery of Brazilian Zouk, adding a rich level of artistry, expression, and precision in their performances and teaching. With extensive experience teaching at Alex de Carvalho's Dance School in Brazil, they have refined an engaging and accessible teaching style for students of all levels.
+          </p>
+          <p>
+            Now based in the USA, Pedro and Ana are known for their dynamic performances and impressive achievements, including multiple podium finishes in Brazilian Zouk dance competitions. They have earned a reputation for delivering world-class instruction while promoting Brazilian Zouk culture globally. They are highly sought after for their classes and have taught at premier Zouk festivals in Canada, the USA, Brazil, and Europe.
+          </p>
+        </div>
 
-          {/* Ana */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src={anaPic}
-              alt="Ana - Brazilian Zouk Instructor"
-              className="w-64 h-64 rounded-full object-cover mb-6 border-4 border-primary/30"
-              loading="lazy"
-              width={640}
-              height={800}
-            />
-            <h3 className="font-display text-2xl font-semibold text-secondary-foreground mb-2">Ana</h3>
-            <p className="text-primary font-body text-sm font-semibold mb-3">Lead Instructor & Performer</p>
-            <p className="text-secondary-foreground/70 font-body text-sm leading-relaxed max-w-xs">
-              Ana's grace and expressiveness on the dance floor are unmatched. She focuses on connection, flow, and helping students discover their own unique dance voice.
-            </p>
-          </div>
+        <div className="text-center mt-10">
+          <a href="#contact" className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity">
+            Book Now!
+          </a>
         </div>
       </div>
     </section>
